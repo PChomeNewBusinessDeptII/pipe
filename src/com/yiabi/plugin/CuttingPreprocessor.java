@@ -11,7 +11,7 @@ public class CuttingPreprocessor {
 		
 		Element doc = _doc;
 		
-		Element articleBody = doc.select("div[itemprop=articleBody]").first();
+		Element articleBody = doc.select("*[itemprop=articleBody]").first();
 		if(articleBody != null) {
 			doc = articleBody;
 		}
